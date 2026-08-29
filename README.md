@@ -1,4 +1,4 @@
 # Dev_Ops_kettu
 projekti koulun kurssille 
 
-Olen kopsannut tämän kiitos t. Emppu
+Juho Hyvärinen e2402268, Tuomas Kallio e2402672, Emmi Kallio e2402271
