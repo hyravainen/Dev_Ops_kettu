@@ -40,10 +40,13 @@ Hyvin laadittu mini-spesifikaatio auttaa suunnittelussa, ohjelmoinnissa, testauk
 kukin pienikin yksityiskohta tekee.
 
 <b>8. Compare the three QFD requirement types: normal, expected, and exciting. Create several examples for a software system and explain why each example belongs to its category.</b><br>
-
+Normaalit vaatimukset tarkoittavat sellaisia vaatimuksia, jotka pitää löytyä valmiista ohjelmasta. Esimerkkejä tästä voi olla huoneen varaaminen ja varauksen peruminen, huonetyypin valinta ja päivämäärän valinta hotellin varausjärjestelmässä. <br>Odotetut (expected) ovat sellaisia, joita ohjelmasta olisi hyvä löytyä, ja niiden puuttuminen voi aiheuttaa suurta puutetta. Näitä voi olla esimerkiksi riittävät maksutavat, navigoinnin helppous/vaikeus ja ohjelman tietoturvallinen käyttö.<br>
+Nice to have, eli exciting, eli ns. ylimääräiset ominaisuudet ovat sellaisia, joita ilman ohjelma toimii eikä niiden puute aiheuta loppukäyttäjässä tunteita. Näistä esimerkkinä voisi olla valinta vaihtaa varausjärjestelmän väriprofiilia tummasta yömoodista vaaleaan päivämoodiin, hotellin huoneiden 360-virtuaaliesittely ja vaikka suosikkihotellin valitseminen.<br>
 
 <b>9. How can prototyping help when customers and developers are not completely sure about the requirements? Discuss its possible benefits for communication, understanding, and requirements refinement.</b><br>
-
+Prototyyppi auttaa kehittäjää ja asiakasta hahmottamaan ohjelman toimintaa, sen virheitä sekä selvittää mahdollsia epäselvyyksiä vaatimuksissa. Samalla tavalla, kuin arkkitehti tekee pienoismallin suunnitelmastaan, myös kehittäjä ja asiakas hyötyy nähdessään prototyypin ohjelmasta, jota kehitetään.
 
 <b>10. How can FAST and QFD be used together during requirements engineering? Develop a team process that shows how customer needs could be collected, discussed, prioritized, and transformed into software requirements.</b><br>
+FAST on apuväline vaatimusten keräämiseen ja dokumentointiin, kun taas QFD auttaa arvioimaan kerättyjen vaamitusten tärkeyttä ja muuttamaan ne mitattavaan muotoon.<br>
+FAST-palaverin jälkeen kerätyt vaatimukset käydään lävitse ja lajitellaan kategorioittain, esimerkiksi käytettävyyteen, luotettavuuteen ja turvallisuuteen. Sen jälkeen ne käydään QFD:n mukaisesti läpi ja priorisoidaan normaaliksi, odotetuksi tai innostavaksi vaatimukseksi. Sitten asiakas antaa näille tärkeysarvon. Kehittäjät muuttavat asiakastarpeet konkreettisiksi vaatimuksisksi ohjelmistoa varten. Lopulta järjestetään uusi FAST-palaveri, jossa ohjelmistovaatimukset käydään läpi, tarkistetaan ne, korjataan mahdolliset epäselvyydet ja hyväksytään lista.
 
