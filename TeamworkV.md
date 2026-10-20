@@ -68,6 +68,80 @@ For each subsystem:
     Define the inputs and outputs
     Define specific functional and non-functional requirements
 
+Hotellivarausjärjestelmä
+    - Käyttöliittymä
+        * Tarkoitus: Näyttää tiedot ja kerää syötteet asiakailta, henkilökunnalta ja ylläpidolta
+        * Syötteet: käyttäjän toiminnot, hakuehdot, lomakkeet; palveluilta tulevat tulokset
+        * Tulosteet: sivut, pyynnöt palveluille, käyttäjälle turvalliset virheilmoitukset
+        * Toiminnalliset:
+            * Asiakas hakee huoneita päivämäärillä, kategorialla ja erikoisvaatimuksilla
+            * Valikot ja sivut näytetään roolin mukaan
+            * Lomake tarkistaa syötteet jo selaimessa
+        * Ei-toiminnalliset:
+            * WCAG 2.1 AA
+            * Toimii eri resoluutioilla
+            * Virhetilanteessa näytetään selkeä viesti, ei koodia
+
+    - Huone- ja saatavuuspalvelu
+        * Tarkoitus: Hallita huoneluetteloa ja vastata saatavuutta
+        * Syötteet: hakuehdot (päivät, henkilömäärä, kategoria, lemmikit, lapset, lisävuoteet), huonetiedot
+        * Tulosteet: lista sopivista vapaista huoneista hintoineen, huoneen tiedot
+        * Toiminnalliset:
+            * Haku vapaille huoneille
+            * Huoneiden lisäys, muokkaus ja poisto
+            * erikoisvaatimusten vastaavuus (esim. huone sallii lemmikit)
+        * Ei-toiminnalliset:
+            * Nopea haku ja sallii useat käyttäjät
+            * Tulos perustuu ajantasaiseen tietoon
+            * Virheelliset päivämäärät hylätään (loppu ennen alkua)
+    - Varauspalvelu
+        * Tarkoitus: Järjestelmän ydin: luoda, muokata ja perua varauksia sekä estää kaksoisvaraukset
+        * Syötteet: huone, vieras, päivämäärät, erikoisvaatimukset, muutos- ja peruutuspyynnöt
+        * Tulosteet: varaus (tunniste, tila), onnistui/epäonnistui + syy, tapahtumat maksulle, ilmoituksille ja lokille
+        * Toiminnalliset:
+            * Varauksen luonti
+            * Päivämäärien ja pituuden muutos
+            * Peruminen
+            * Päällekkäisyyden tarkistus (lähtöpäivänä huone vapautuu)
+            * Tilat (vahvistettu, maksettu, peruttu)
+            * Henkilökunta näkee varaukset sisältöineen, asiakas omansa
+        * Ei-toiminnalliset:
+            * 0 päällekkäistä varausta, myös samanaikaisilla pyynnöillä
+            * Laikki muutokset kirjataan lokiin
+            * Jos maksu epäonnistuu, varaus ei jää epäyhtenäiseen tilaan
+    - Maksupalvelu
+        * Tarkoitus: Käsitellä ennakko- ja paikan päällä -maksut sekä hyvitykset maksuadapterin kautta
+        * Syötteet: varauksen tunniste, summa, maksutapa, hyvityspyyntö
+        * Tulosteet: maksun tila (maksettu, odottaa, epäonnistui), kuitti, hyvityksen tila
+        * Toiminnalliset:
+            * Ennakkomaksu
+            * Paikan päällä maksun kirjaus
+            * Hyvitys vain esihenkilölle
+        * Ei-toiminnalliset:
+            * Korttitietoja ei tallenneta
+            * Kaikki maksutapahtumat kirjataan lokiin
+    - Ilmoituspalvelu
+        * Tarkoitus: Lähettää automaattiset viestit.
+        * Syötteet: tapahtuma (varaus luotu, muutettu, peruttu) ja vastaanottajan osoite.
+        * Tulosteet: viesti, toimitustila.
+        * Toiminnalliset:
+            * Vahvistusviesti automaattisesti varauksen jälkeen
+            * Viesti muutoksesta ja peruutuksesta
+        * Ei-toiminnalliset:
+            * Viestin epäonnistuminen ei estä varausta, vaan kirjataan ja yritetään uudelleen
+            * Viestiin ei laiteta maksutietoja
+    - Tietokanta
+        * Tarkoitus: Tallentaa ja hakea tiedot (Room, Guest, Booking, User)
+        * Syötteet: palveluiden kyselyt ja tallennuspyynnöt
+        * Tulosteet: mallit, tallennuksen tulos
+        * Toiminnalliset:
+            * Tallennus ja haku
+            * Transaktiot varauksen yhteydessä
+        * Ei-toiminnalliset:
+            * Varmuuskopiot
+            * Henkilötietojen poisto tai anonymisointi on mahdollista (GDPR)
+
+
 4. Using Quality Function Deployment
 
 Use Quality Function Deployment (QFD) to analyse the relationship between stakeholder/customer needs and the technical requirements of the application. The analysis should:
