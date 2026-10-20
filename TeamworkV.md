@@ -182,4 +182,6 @@ Use Quality Function Deployment (QFD) to analyse the relationship between stakeh
 | 7 | H8 Maksutavat ja hyvitys | 48 | 4 | **Should:** toteutus mock-versiona |
 | 8 | H6 Vahvistusviesti | 27 | 2 | **Could:** mock-viesti riittää |
 
-5. Draw use-case and sequence diagrams for the application. 
+5. Draw use-case and sequence diagrams for the application.
+   
+![Käyttötapauskaavio](usecase.drawio.png)
