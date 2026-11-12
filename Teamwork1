@@ -1,0 +1,23 @@
+Teamwork 1 (Software Engineering Concepts)
+
+What is software engineering? Explain what it includes.
+- Ohjelmistokehitystä. Järjestelmällistä toimintaa jossa pyritään luomaan sovellus/sivusto/tuote/palvelu. 
+
+How engineering process is divided into different phases? What activities are involved in each phase?
+- Määrittely -> suunnittelu -> toteutus -> testaus -> julkaisu -> ylläpito
+
+Why do we need software development process models?
+- Projektit poikkeavat toisistaan ja jokaista varten tarvitaan siihen parhaiten sopiva viitekehys. Esimerkiksi moottoria ei voi rakentaa ketterällä menetelmällä, koska vaatimukset eivät muutu eikä käyttäjäpalaute ole oleellista kehitysvaiheessa. 
+
+How Spiral model differs from Waterfall model?
+- Spiral-mallissa on laajaa riskiarviointia sekä riskien eliminointia ennenkuin se evolvoituu myöhemmässä vaiheessa vesiputousmalliin.
+
+What are the advantages of Modified Waterfall model over Pure Waterfall model?
+- Muokattu vesiputousmalli on paljon joustavampi, kuin tyypillinen vesiputousmalli, joka on lähtökohtaisesti jäykempi ja muuttumattomampi. Esimerkiksi prototyyppien käyttö vesiputousmallissa helpottaa seuraavan askeleen ottamista.
+
+What are the advantages of iterative development?
+- Se mahdollistaa suurempien töiden palastelun ja monitoroinnin töiden edetessä. Ei tarvitse odottaa koko ohjelmistoa valmiiksi ennen testaamista tai muutosehdotusten läpikäyntiä.
+
+What are the advantages of RUP over other development process models?
+- RUP on todella järjestelmällinen tapa toteuttaa ohjelmistokehitystä. Dokumentointi on äärimmäisen kattavaa ja riskienhallintaa pidetään korkeampana prioriteeteissa. Soveltuu hyvin suuriin, monimutkaisiin projekteihin.
+
