@@ -514,8 +514,13 @@ export default function App() {
       {isSimulationModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
           <div className="bg-[#141e36] border border-slate-700 rounded-2xl max-w-2xl w-full p-6 shadow-2xl relative">
-            <button onClick={() => setIsSimulationModalOpen(false)} className="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">
-              <i className="fa-solid fa-xmark"></i>
+            <button
+              type="button"
+              onClick={() => setIsSimulationModalOpen(false)}
+              aria-label="Sulje loki-ikkuna"
+              className="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold"
+            >
+              ✕
             </button>
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
