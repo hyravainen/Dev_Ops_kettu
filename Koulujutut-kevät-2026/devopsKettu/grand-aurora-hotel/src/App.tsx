@@ -304,7 +304,6 @@ export default function App() {
             <div className="bg-[#141e36] p-6 rounded-2xl border border-slate-700 shadow-xl">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
                 <div>
-                  <span className="text-xs font-mono text-[#d4af37] bg-[#d4af37]/10 px-2.5 py-1 rounded border border-[#d4af37]/20">GET /api/calendar/availability</span>
                   <h2 className="text-2xl font-bold text-white mt-1">Interaktiivinen Kalenteri & Varaustilanne</h2>
                   <p className="text-sm text-slate-400">Tarkastele huonekohtaista varaustilannetta päiväkohtaisesti.</p>
                 </div>
@@ -383,7 +382,6 @@ export default function App() {
             <div className="bg-[#141e36] p-6 rounded-2xl border border-slate-700 shadow-xl">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
                 <div>
-                  <span className="text-xs font-mono text-[#d4af37] bg-[#d4af37]/10 px-2.5 py-1 rounded border border-[#d4af37]/20">GET /api/reservations</span>
                   <h2 className="text-2xl font-bold text-white mt-1">Varausten Hallinta</h2>
                   <p className="text-sm text-slate-400">Tarkastele, muokkaa tai peruuta tehtyjä varauksia.</p>
                 </div>
